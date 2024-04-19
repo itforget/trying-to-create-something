@@ -1,5 +1,5 @@
 import {
-  IsDateString,
+  IsDate,
   IsEmail,
   IsNotEmpty,
   IsOptional,
@@ -16,8 +16,7 @@ export class UpdateUserDTO {
   @IsOptional()
   password: string;
   @IsNotEmpty()
-  @IsDateString()
-  @IsOptional()
+  @IsDate()
   dateBirth: string;
   @IsNotEmpty()
   @IsEmail()
